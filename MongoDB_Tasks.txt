@@ -1,0 +1,73 @@
+***Creating a database 
+
+use sampleMongoDB
+---------------------------------------------------------------
+***Create 2 collection with "name" student and marks.
+
+db.createCollection("student")
+db.createCollection("marks")
+------------------------------------------------------------------
+***student("id","name", "address", "phone number", "city")
+
+db.student.insertMany([
+	{"id":"100", "name":"nilesh", "address":"kslayout", "phone number":"9663884356", "city":"Bengaluru"},
+	{"id":"200", "name":"mukesh", "address":"kengeri", "phone number":"9663881298", "city":"Mumbai"},
+	{"id":"300", "name":"pramodh", "address":"jpnagar", "phone number":"9663886789", "city":"Delhi"},
+	{"id":"400", "name":"manoj", "address":"koramangala", "phone number":"9663884566", "city":"Guwahati"},
+	{"id":"500", "name":"akshansh", "address":"hsrlayout", "phone number":"9663881233", "city":"Patna"}
+])
+---------------------------------------------------------------------------------------------------------
+***marks("id", "name", "sub1", "sub2", "sub3")
+
+db.marks.insertMany([
+	{"id":"100", "name":"ankit", "sub1":50, "sub2":90, "sub3":82},
+	{"id":"200", "name":"aniket", "sub1":23, "sub2":90, "sub3":34},
+	{"id":"300", "name":"ojaswi", "sub1":45, "sub2":90, "sub3":29},
+	{"id":"400", "name":"prasoon", "sub1":67, "sub2":90, "sub3":10},
+	{"id":"500", "name":"dibu", "sub1":12, "sub2":47, "sub3":34}
+])
+---------------------------------------------------------------------------------------
+***Update that record
+
+db.student.updateMany(					db.marks.update(
+	{"id": {$gt:300}},						{"id":400},
+	{$set:{"city":"Rajasthan"},				{$set:{"sub3":76},
+	{upsert:true}						{upsert:true}
+)							)
+-------------------------------------------------------------------------------------
+***Delete the record
+
+db.student.deleteMany({					db.marks.deleteOne({
+	"city":"Rajasthan"					"name":"aniket"		
+})							})
+---------------------------------------------------------------------------------------
+***Find particular record
+
+db.student.find({					db.marks.find({
+	""name"":"nilesh"						""sub2"":1
+})							})
+---------------------------------------------------------------------------------------
+***Sort the column
+
+db.student.find().sort({				db.marks.find().sort({
+	""phone number"":1					""sub1"":1
+})							})
+-----------------------------------------------------------------------------------
+***Search text from column
+
+db.student.find({							db.marks.find({
+	$text: { $search: "nilesh Mumbai hsrlayout"}				$text: { $search: "ankit dibu"}
+})									})
+-----------------------------------------------------------------------------------
+***calculate the avg and sum of marks
+
+db.student.aggregate([								db.marks.aggregate([
+	{										{
+		$project: {									$project: { "name": 1,
+			avgAmount: {$avg: "$"phone number""}						avg"sub1": {$avg: "$"sub1""},
+		}											avg"sub2": {$avg: "$"sub2""},
+	}												avg"sub3": {$avg: "$"sub3""}
+])													total: {$add: ["$"sub1"","$"sub2"","$"sub3""]}
+												}
+											}
+										])

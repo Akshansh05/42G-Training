@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Master_pageExample.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Working with Data Tutorials</title>
+    <link href="Styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color:aqua;">
+    <div id="wrapper">
+
+            <div id="header">
+                <span class="title">HELLO PEOPLE</span><br />
+                <span class="breadcrumb">
+                 Try to Login.</span>
+            </div>
+
+            <div id="content">
+                <asp:contentplaceholder id="MainContent"
+                 runat="server">
+                  <!-- Page-specific content will go here... -->
+                </asp:contentplaceholder>
+            </div>
+
+            <div id="navigation">
+                <br />
+                HAVE A GOOD DAY
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+C:\Users\akshansh\Desktop\Work\playground\Akshansh_project\SqlUse\SqlUse\bin\Debug\SqlUse.exe.config
+C:\Users\akshansh\Desktop\Work\playground\Akshansh_project\SqlUse\SqlUse\bin\Debug\SqlUse.exe
+C:\Users\akshansh\Desktop\Work\playground\Akshansh_project\SqlUse\SqlUse\bin\Debug\SqlUse.pdb
+C:\Users\akshansh\Desktop\Work\playground\Akshansh_project\SqlUse\SqlUse\obj\Debug\SqlUse.csproj.CoreCompileInputs.cache
+C:\Users\akshansh\Desktop\Work\playground\Akshansh_project\SqlUse\SqlUse\obj\Debug\SqlUse.exe
+C:\Users\akshansh\Desktop\Work\playground\Akshansh_project\SqlUse\SqlUse\obj\Debug\SqlUse.pdb

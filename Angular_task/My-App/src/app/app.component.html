@@ -1,0 +1,35 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">42Gears</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a routerLink="dash">Dashboard</a></li>
+      <li><a routerLink="employee">Employee</a></li>
+      <li><a routerLink="about">About</a></li>
+      <li><a routerLink="contact">Contact</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+<input type="number" placeholder="Enter Num1 " [(ngModel)]="num1"/>
+<input type="number" placeholder="Enter Num2 " [(ngModel)]="num2"/>
+<p>{{num1+num2}}</p><br><br>
+<input type="number" placeholder="Enter Num1 " [(ngModel)]="num3"/>
+<input type="number" placeholder="Enter Num2 " [(ngModel)]="num4"/>
+<p>{{num3-num4}}</p><br><br>
+<input type="number" placeholder="Enter Num1 " [(ngModel)]="num5"/>
+<input type="number" placeholder="Enter Num2 " [(ngModel)]="num6"/>
+<p>{{num5*num6}}</p><br><br>
+<input type="number" placeholder="Enter Num1 " [(ngModel)]="num7"/>
+<input type="number" placeholder="Enter Num2 " [(ngModel)]="num8"/>
+<p>{{num7/num8}}</p><br><br>
+
+
+
