@@ -1,0 +1,29 @@
+asp -rich web interface stateless wafe form
+html not as above
+
+overcome challanges
+
+Implementing a rich web user Interface
+separation of client and server
+statelss execution
+Complicatons with data ascess
+event-driven Programming Language
+
+asp
+server control
+Master page
+Working with data
+State Management
+Security
+Debugging and error Handling
+Deployment and hosting
+
+state management Technique
+
+client side
+server side
+cs: View state,hidden Fields,query String,Cookies
+ss:application state and session state
+
+session -all pages view
+view state- current page session only is view state 

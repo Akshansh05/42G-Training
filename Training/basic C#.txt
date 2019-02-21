@@ -1,0 +1,169 @@
+
+.net develops windows app,windows softwares.
+
+.net fwork-  interface bw os and C#,Vb.net,f# N:1
+
+java many diff frame work 1:N spring,hibernate
+.net     .net core
+not os    os open source
+paid      np
+npi       pi platform independent
+no req lib          req lib
+
+clr-  converts bytecodes(ir) to machine codes
+   garbage collections
+   code auth
+   code verify
+   jit
+jit-byte code to machine code
+
+cts- checks that the types are accordingly matched in language code conversion v.net=>c# or otherwise
+
+cls-checks that the code conversion are according to the documentation or not .subset of cts
+
+Applications can be for browsers and softwares
+
+winForms- lib file for .net
+asp.net- html,css,js
+ado.net- dbms
+wpf - graphical uses directX
+wcf- used for communication
+
+code
+il- cts,cls
+clr
+os
+h/w
+
+f11-ever line debug step into
+f10- perform specific line debug skip function calls and does not goes to fn
+shift+f9 see the value 
+locals and quick watch
+
+
+checked{
+}
+shows error like overflow
+
+var compile time
+linQ
+int [] testaray={1,2,3,4,5,6};//array as result 
+var rs=from x in testarray where x<5 select x;//linQ or IEnumerable <int> res
+Console.readLine();
+
+dynamic someName=Deserialize(xyz);
+
+if(null != someName.SerialNumber)
+{
+
+}
+
+parameterized query keeps quey safe
+local var is preferred that global
+
+  multiple returns from a fn -out parameters
+
+one from fn n from out par
+out par come from end
+
+int res(out value1,out value 2)
+  ret val1*val2;
+try parse bool
+bool res-Int32.TryParse(test1,out value)    
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int count;
+            for(int i = 1; i <= 100; i++)
+            {
+                count = 0;
+                for(int j = 1; j <= i; j++)
+                {
+                    if (i % j == 0)
+                        count++;
+                }
+                if(count==2)
+                    Console.Write("{0} ",i);
+            }
+                
+                Console.ReadKey();
+            }
+
+int[] arr={1,2,3}
+List is used
+dictionary<String,String> dict1
+                   int
+                    list<int>
+                    list<string>
+dict1[" "]
+
+{
+string[] testArray = { "13", "17", "22", "3467", null, "notNumber", "55" };
+            int a;
+            for( int i = 0; i < testArray.Length; i++)
+            {
+                bool res = Int32.TryParse(testArray[i],out a);
+                int k;
+                if (res==true)
+                {
+                    k = a;
+                    int flag = 0;
+                    for(int r = 2; r <= k / 2; r++)
+                    {
+                        if (k % r == 0)
+                        {
+                            flag = 1;
+                        }
+                    }
+                    if (flag == 0)
+                        Console.WriteLine(k);
+                }
+            }
+            Console.ReadKey();
+
+        }
+
+readvlues(query,filler)
+            datatype changes acc to query
+delegate bool delName()//fnpointer
+delName filler
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace HelloWorld
+{
+
+    class Program
+    {
+        public delegate int FuncProto(int num1, int num2);//used in dbquery
+    
+        public static int Add(int n1, int n2)
+        {
+            return n1 + n2;
+        }
+
+        public static int Subtract(int n1, int n2)
+        {
+            return n1 - n2;
+        }
+
+        static void Main(string[] args)
+        {
+
+            FuncProto fnToCall = Add;
+            int op = fnToCall(10, 5);
+            Console.WriteLine(op);
+
+            fnToCall = Subtract;
+            op = fnToCall(10, 5);
+            Console.WriteLine(op);
+
+            Console.ReadLine();
+        }
+    }
+}

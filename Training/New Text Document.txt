@@ -1,0 +1,132 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Computer_Shop
+{
+    public class Program
+    {
+     
+        public void OSName()
+        {
+            int OsOption;
+            Console.WriteLine("The available OS's are:");
+            Console.WriteLine("1. IOS");
+            Console.WriteLine("2. Ubuntu");
+            Console.WriteLine("3. Windows");
+            Console.WriteLine("Select the OS:");
+            OsOption = Int32.Parse(Console.ReadLine());
+            switch (OsOption)
+            {
+                case 1:
+                    Apple ap = new Apple();
+                    ap.devices();
+                    break;
+                case 2:
+                    Ubuntu lin = new Ubuntu();
+                    lin.devices();
+                    break;
+                case 3:
+                    Windows win = new Windows();
+                    win.devices();
+                    break;
+            }
+
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to Computer Shop");
+            while (true) {
+
+                Console.WriteLine("Press 1 for Buying a Computer");
+                Console.WriteLine("Press 2 Feedback");
+                Console.WriteLine("Press 3 Exit");
+                Console.WriteLine();
+                Console.WriteLine("Select the Option");
+                int option = Int32.Parse(Console.ReadLine());
+                switch (option)
+                { case 1: {
+                            Program ob1 = new Program();
+                            ob1.OSName();
+                            break;
+                        }
+
+                }
+
+            }
+
+        }
+    }
+    public abstract class specification
+    {
+        public abstract void spec();
+    }
+    public class Apple :specification
+    {
+        public void devices()
+        {
+            Console.WriteLine("The available IOS Computers are:");
+            Console.WriteLine("1. MacBook Pro");
+            Console.WriteLine("2. MacBook Air");
+            Console.WriteLine("Select an option");
+            int MacOption = Int32.Parse(Console.ReadLine());
+            switch (MacOption)
+            {
+                case 1:
+                   // specification ob = new specification();
+                   spec();
+                    break;
+                case 2:
+                    spec();
+                    break;
+            }
+        }
+
+        public override void spec()
+        {
+            Console.WriteLine("Ram 4 gb Graphics 2 gb");
+        }
+
+    }
+    public class Ubuntu : specification
+    {
+        public void devices()
+        {
+            Console.WriteLine("The available Ubuntu Computers are:");
+            Console.WriteLine("1. Lenevo Thinkpad");
+            Console.WriteLine("2. HP Spectre");
+            Console.WriteLine("Select an option");
+            int UbuntuOption = Int32.Parse(Console.ReadLine());
+            switch (UbuntuOption)
+            {
+                case 1:
+                    // specification ob = new specification();
+                    spec();
+                    break;
+                case 2:
+
+                    break;
+
+            }
+        }
+
+        public override void spec()
+        {
+            Console.WriteLine("Ram 8 gb Graphics 4 gb");
+        }
+    }
+
+        public class Windows : Program
+    {
+        public void devices()
+        {
+            Console.WriteLine("The available Windows Computers are:");
+            Console.WriteLine("1. Sony Viao");
+            Console.WriteLine("2. Dell Alienware");
+        }
+    }
+   
+}
+    

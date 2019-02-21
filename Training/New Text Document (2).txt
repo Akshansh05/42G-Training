@@ -1,0 +1,4 @@
+Soap-stateful-xml
+rest -stateless.xml/json
+no connection required for a call
+yarc

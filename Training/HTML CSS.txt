@@ -1,0 +1,7 @@
+# for main ide
+. for class
+placeholder - just update the page with new click without changing the index we call the.html file
+../css come to root and then check for css
+xl min width->1200px
+ld->900px
+md-> given on w3 school

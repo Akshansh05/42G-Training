@@ -1,0 +1,22 @@
+initialized to null ?
+
+int myData=dr.GEtIntFromDatabase() ?? 100;if null then 100
+enum numeric value to symbolic rep
+enum EmpType{
+manager,//0
+grunt //1
+
+}
+
+enum EmpType :byte{
+
+}
+
+int abc(int a,int b,out int c)
+{ c=a+b;
+return c;
+}
+c value can be used outside
+abc(int a,int b ,out c)
+
+param-one parameter type parameter modifier

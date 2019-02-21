@@ -1,0 +1,34 @@
+Abstraction 
+pol-run and compile
+overloading overriding
+inhertance
+runtume virtual key no run time or compile if a method content is deleted
+abstract
+singleton-one obejct from a class
+sealed classno calling from overriding fn
+public int MyProperty{get; set;}=4
+private int _mypoperty;
+public int MyProperty{
+get {
+if(_mypropety<4){
+return 2;}
+else{
+return 3;}
+}
+set{
+_mypropert=4; or _mypropety=value;
+}
+}
+public delegate string Mydel(string str);
+event MyDel Myevent;
+program ob1=new program();
+string res= ob1.Myevent("tp");
+console.writeline(re);
+git clone
+
+git init
+git add .
+
+git add origin bname rnamelink
+git commit -m "done"
+git push bname

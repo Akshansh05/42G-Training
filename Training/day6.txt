@@ -1,0 +1,31 @@
+convert from regular type to obj typ boxing and unboxing
+
+int i=5;
+Object ob1=i;
+
+unboxing
+int x;
+x=(int)ob1
+C# MULTIPLE INHERITANCE FROM interface;
+Itest someInt=otherObj as Itest;//Itest interface
+if(null != Itest){
+Console.writeLine();
+}
+Stack s1 =new Stack();
+s1.push(5);
+s1.push(6);
+s1.push("seven");
+s1.push(8)
+
+non generic above
+
+generic
+Stack <int> s1=new Stack<int>();
+
+Dictionary<string,int>dict1 =new Dictionary<string,int>();
+dict["someName"]=4;
+
+Activate database ado.net
+
+System.Data.Odbc
+

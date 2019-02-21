@@ -1,0 +1,28 @@
+model-tables
+soc-separation of concern
+view in separate
+control in searate
+aspx-html
+asmx-dta forms
+ashx-image file uploads
+
+mvs   webform
+layout master page
+partial view user control  aspx
+
+templates dynamic table generation 
+to acces aspx asmx ajax is used
+
+cross origin working on different port and accessing one project /port from another project/port
+Ajax
+table collection
+row document
+MongoDb -anyformat sql-relational format 
+
+row-object
+col-value
+table-collection
+record-document
+
+superscript of js typescript -
+.ts
